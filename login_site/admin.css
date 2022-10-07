@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body
+{
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.sidebar
+{
+    width: 300px;
+    background: #FAF9F6EE;
+    box-shadow: 2px 4px 8px -3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 2px 4px 8px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 4px 8px -3px rgba(0,0,0,0.75);
+    height: 110vh;
+}
+.sidebar .admin-logo
+{
+    text-align: center;
+    padding: 20px 18px 20px 18px;
+}
+.sidebar .admin-profile
+{
+    text-align: center;
+}
+.sidebar .admin-profile label
+{
+    color: #008E97;
+}
+
+.sidebar .admin-profile img
+{
+    width: 80px;
+    border-radius: 50%;
+}
+
+.sidebar .position
+{
+    text-align: center;
+    font-size: 12px;
+    color:  #A9A9A9;
+}
+
+.sidebar .navigation
+{
+    margin-top: 2rem;
+    margin-left: 3rem;
+
+}
+.sidebar .navigation ul li 
+{
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    list-style: none;
+}
+.sidebar .navigation ul li i
+{
+    padding-right: 15px;
+    color:#87CEEB;
+}
+
+.sidebar .navigation ul li .fa-caret-down
+{
+    padding-left: 20px;
+    color: lightgrey;
+}
+
+.interface
+{
+    width: 100%;
+    height: 110vh;
+    background: url("bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.interface .header
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: #D3D3D3;
+    padding: 15px;
+}
+.interface .header h2
+{
+    color: #008E97;
+    font-weight: bold;
+}
+.interface .header-side-section 
+{
+    display: flex;
+}
+
+.interface .header-side-section .notification
+{
+    position: relative;
+    margin-right: 25px;
+}
+.interface .header-side-section .notification .fa-bell
+{
+    color: #808080;
+}
+
+.interface .header-side-section span
+{
+    position: absolute;
+    top: -50%;
+    right:-10px;
+    font-size: 10px;
+    background: #F28C28;
+    color: #fff;
+    border-radius: 50%;
+    padding: 1.5px;
+    font-weight: bolder;
+}
+
+.interface .header-side-section .dropdown
+{
+    margin-right: 10px;
+}
+.interface .header-side-section .dropdown label
+{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.interface .header-side-section .dropdown label i
+{
+    padding-left: 10px;
+    color:#bfc1c2;
+}
+
+.interface .sub-title
+{
+    padding: 10px 0 13px 18px;
+    color:#242124;
+    font-size: 20px;
+    
+    		
+}
+.interface .box-container 
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 5px 30px 15px 30px;
+}
+.interface .box-container .box
+{
+    
+    background: #FAF9F6;
+    box-shadow: 0px 3px 19px -9px rgba(0,0,0,0.79);
+    -webkit-box-shadow: 0px 3px 19px -9px rgba(0,0,0,0.79);
+    -moz-box-shadow: 0px 3px 19px -9px rgba(0,0,0,0.79);
+    padding: 10px;
+    border: 5px;
+}
+.interface .box-container .box .logo-box
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.interface .box-container .box .logo-box .fa-bullhorn
+{
+    color: #F28C28;
+    font-size: 18px;
+}
+.interface .box-container .box .logo-box .fa-ellipsis
+{
+    color: #bfc1c2;
+    font-size: 18px;
+}
+
+
+.interface .box-container .box h3
+{
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 5px;
+}
+.interface .box-container .box span
+{
+    font-size: 10px;
+    padding-left: 5px;
+}
+
+.interface .box-container .box p
+{
+    font-size: 13px;
+    padding: 5px;
+}
+
+.interface .box-container .box p span
+{
+    font-size: 13px;
+    color: #F28C28;
+    padding-left: 2px;
+}
+
+.interface .interface-body
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 30px 15px 30px;
+    gap:20px;
+}
+
+.interface .interface-body .chart-section
+{
+    flex: 1 1 32rem;
+    background: #FAF9F6;
+    border-radius: 5px;
+    
+  
+}
+.interface .interface-body .chart-section .header-chart
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.interface .interface-body .chart-section .header-chart .left-header
+{
+    display: flex;
+    align-items: center;
+    margin: 5px 0 0 15px;
+}
+
+.interface .interface-body .chart-section .header-chart .left-header h2
+{
+    font-size: 20px;
+    padding-right: 5px;
+    padding-top: -10px;
+    color:#808080;
+}
+
+.interface .interface-body .chart-section .header-chart .left-header h3
+{
+    font-size: 15px;
+    color: #F28C28;
+    padding-top: 4px;
+}
+
+.interface .interface-body .chart-section .header-chart .right-header
+{
+    display: flex;
+    list-style: none;
+    margin:5px 8px 6px 10px;
+}
+.interface .interface-body .chart-section .header-chart .right-header li
+{
+    margin: 10px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+.interface .interface-body .chart-section .header-body
+{
+    display: flex;
+}
+.interface .interface-body .chart-section .header-body .time-section
+{
+    margin: 0 10px 0 15px;
+}
+.interface .interface-body .chart-section .header-body .time-section li
+{
+    list-style: none;
+    font-size: 15px;
+    padding-bottom: 15px;
+    color: #A9A9A9;
+}
+
+.interface .interface-body .chart-section .header-body .bar-chart hr
+{
+    width: 160%;
+    color: #808080;
+}
+
+.interface .interface-body .chart-section .header-body .bar-chart .bar
+{
+    background: #008E97;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    width: 160%;
+    margin-top: 10px;
+}
+.interface .interface-body .chart-section .header-body .bar-chart .bar span
+{
+    font-size: 10px;
+    margin-right: 15px;
+    margin-left: 10px;
+}
+
+.interface .interface-body .chart-section .header-body .bar-chart .bar label
+{
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.interface .interface-body .chart-section .header-body .bar-chart .bar-2
+{
+    background: #008E97;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    width: 160%;
+    margin-top: 2px;
+}
+.interface .interface-body .chart-section .header-body .bar-chart .bar-2 span
+{ 
+    font-size: 10px;
+    margin-right: 15px;
+    margin-left: 10px;
+}
+
+.interface .interface-body .chart-section .header-body .bar-chart .bar-2 label
+{ 
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.interface .interface-body .chart-section .header-body .bar-chart .bar-3
+{
+    background: #008E97;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    width: 160%;
+    margin-top: 10px;
+    height: 70px;
+}
+
+.interface .interface-body .chart-section .header-body .bar-chart .bar-3 span
+{
+    font-size: 10px;
+    margin-right: 15px;
+    margin-left: 10px;
+}
+
+.interface .interface-body .chart-section .header-body .bar-chart .bar-3 label
+{
+    font-size:14px;
+    font-weight: bolder;
+}
+
+
+.interface .interface-body .chart-section .header-body .bar-chart .line-div
+{
+    width: 160%;
+    margin-top: 20px;
+}
+
+.interface .interface-body .chart-section .header-body .bar-chart .line-div2
+{
+    width: 160%;
+    margin-top: 30px;
+}
+
+.interface .interface-body .chart-section .header-body .bar-chart .line-div3
+{
+    width: 160%;
+    margin-top: 3px;
+}
+
+.interface .interface-body .chart-section .header-body .bar-chart .line-div4
+{
+    width: 160%;
+    margin-top: 20px;
+}
+
+.interface .interface-body .chart-section .header-body .bar-chart .line-div5
+{
+    width: 160%;
+    margin-top: 40px;
+}
+
+.interface .interface-body .todolist
+{
+    flex: 1 1 10rem;
+    background: #FAF9F6;
+    border-radius: 5px;
+}
+.interface .interface-body .todolist .todo-header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.interface .interface-body .todolist .todo-header h3
+{
+    font-size: 20px;
+    color: #808080;
+}
+.interface .interface-body .todolist .todo-header label
+{
+    font-size: 13px;
+    color: #F28C28;
+}
+
+.interface .interface-body .todolist .list .check-list
+{
+    display: flex;
+    margin: 0 0 10px 10px;
+}
+
+.interface .interface-body .todolist .list .check-list .box
+{
+    height: 18px;
+    width: 20px;
+    background: #bfc1c2;
+    border-radius: 2px;
+    margin-right: 10px;
+}
+.interface .interface-body .todolist .list .check-list .desc h3
+{
+    font-size: 14px;
+    color: #242124 ;
+}
+.interface .interface-body .todolist .list .check-list .desc small
+{
+    font-size: 10px;
+}
+
+.interface .interface-body .todolist .list .check-list .desc p,
+.interface .interface-body .todolist .list .check-list .desc span
+{
+    font-size: 12px;
+    color: #242124;
+}
+.interface .interface-body .todolist .list .check-list .desc span
+{
+    font-size: 12px;
+    color: #F28C28;
+}
+
+.interface .interface-body .todolist .links h2
+{
+    font-size: 16px;
+    padding: 8px;
+    font-weight: 600;
+}
+
+.interface .interface-body .todolist .links .link-list
+{
+    display: flex;
+}
+.interface .interface-body .todolist .links .link-list .link-listed
+{
+    text-align: center;
+    margin-right: 5px;
+}
+.interface .interface-body .todolist .links .link-list .link-listed i
+{
+    color: #F28C28;
+    font-size: 25px;
+}
+.interface .interface-body .todolist .links .link-list .link-listed div p
+{
+    font-size: 10px;
+    
+}
+.interface .footer-section
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 30px 15px 30px;
+}
+
+.interface .footer-section .footer-1 h4,
+.interface .footer-section .footer-2 h4
+{
+    font-size: 13px;
+    color: #808080;
+}
+@media (max-width:1300px)
+{
+    .interface .interface-body .chart-section .header-body .bar-chart hr,
+    .interface .interface-body .chart-section .header-body .bar-chart .line-div,
+    .interface .interface-body .chart-section .header-body .bar-chart .line-div2,
+    .interface .interface-body .chart-section .header-body .bar-chart .line-div3,
+    .interface .interface-body .chart-section .header-body .bar-chart .line-div4,
+    .interface .interface-body .chart-section .header-body .bar-chart .line-div5,
+    .interface .interface-body .chart-section .header-body .bar-chart .bar,
+    .interface .interface-body .chart-section .header-body .bar-chart .bar-2,
+    .interface .interface-body .chart-section .header-body .bar-chart .bar-3
+    {
+        width:155%;
+    }
+    
+}
